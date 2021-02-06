@@ -9,7 +9,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /* NAVBAR */
@@ -153,12 +153,11 @@ a {
 
 #contact-me-container {
     display: flex;
-    border: 2px solid hotpink
+    margin-top: 45px;
 }
 
 #contact-me-title {
     justify-content: start;
-    border: 2px solid limegreen
 }
 
 #contact-methods {
@@ -169,8 +168,4 @@ a {
     list-style: none;
     margin-left: 300px;
     color:black;
-}
-
-#linked-in-link {
-    color: black;
 }
