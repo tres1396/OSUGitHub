@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("shadow.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* NAVBAR */
+.top-nav {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid fuchsia;
+}
+
+/* left of navbar */
+#nav-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
+    height: 80%;
+    border: 2px solid tomato;
+}
+
+.top-image {
+    border-radius: 50%;
+    width: 100px;
+    justify-content: flex-start;
+}
+
+.header-name {
+    font-size: 50px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+}
+
+/* right of navbar */
+#nav-links {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    list-style: none;
+    margin-right: 1em;
+}
+
+.nav-link {
+    margin: 5px;
+    padding: 20px;
+    background-color: blue;
+
+}
+
+
+#about-me-container {
+    display: flex;
+    border: 2px solid green;
+    margin: 5% 0 0 0;
+}
+
+#about-me-title{
+    justify-content: start;
+    border: 2px solid orange;
+    padding:
+}
+
+#about-me-text {
+    flex-direction: row;
+    border: 2px solid purple;
+}
+
+#main-work-container {
+    display: flex;
+    border: 2px solid yellow;
+    margin-top: 20px;
+}
+
+#main-work-title{
+    justify-content: start;
+    border: 2px solid blue;
+}
+
+#horiseon-image {
+    flex-direction: row;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
+#horiseon-img{
+    width: 40%;
+    margin-left: 50px;
+}
+
+#fanpage-container {
+    display: flex;
+    border: 2px solid indigo
+}
+#fanpage-image {
+    justify-content: start;
+    margin-left: 108px;
+    border: 2px solid cyan
+}
+
+#fanpage-img {
+    width: 30%
+}
+
+#contact-me-container {
+    display: flex;
+    border: 2px solid hotpink
+}
+
+#contact-me-title {
+    justify-content: start;
+    border: 2px solid limegreen
+}
+
+#contact-methods {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    list-style: none;
+    margin-left: 300px;
+}
