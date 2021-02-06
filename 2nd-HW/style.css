@@ -5,6 +5,7 @@ body {
     background-image: url("shadow.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 a {
     text-decoration: none;
@@ -18,7 +19,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid fuchsia;
 }
 
 /* left of navbar */
@@ -28,17 +28,16 @@ a {
     align-items: center;
     width: 33%;
     height: 80%;
-    border: 2px solid tomato;
 }
 
 .top-image {
     border-radius: 50%;
-    width: 100px;
+    width: 85px;
     justify-content: flex-start;
 }
 
 .header-name {
-    font-size: 50px;
+    font-size: 35px;
     color: black;
     display: flex;
     justify-content: flex-start;
@@ -47,7 +46,6 @@ a {
 
 /* right of navbar */
 #nav-links {
-    border: 2px solid blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,43 +56,53 @@ a {
 
 .nav-link {
     margin: 5px;
-    padding: 20px;
-    background-color: blue;
-
+    padding: 15px;
+    color: rgb(32, 32, 32);
+    /* background-color: rgb(36, 36, 37); */
+    border-radius: 5px;
 }
 
 
 #about-me-container {
     display: flex;
-    border: 2px solid green;
     margin: 5% 0 0 0;
 }
 
 #about-me-title{
     justify-content: start;
-    border: 2px solid orange;
-    padding:
+    margin: 10px;
+    padding: 5px;
+    padding-right: 10px;
+    width: 60px;
+    font-weight: bold;
+    border-right: 2px solid black;
+    font-family: 'Karla', sans-serif; 
 }
 
 #about-me-text {
     flex-direction: row;
-    border: 2px solid purple;
+    font-family: 'Karla', sans-serif; 
+    font-weight: bold;
 }
 
 #main-work-container {
     display: flex;
-    border: 2px solid yellow;
     margin-top: 20px;
 }
 
 #main-work-title {
     justify-content: start;
-    border: 2px solid blue;
+    margin: 10px;
+    padding: 5px;
+    padding-right: 10px;
+    width: 60px;
+    font-weight: bold;
+    border-right: 2px solid black;
+    font-family: 'Karla', sans-serif; 
 }
 
 #horiseon-image {
     flex-direction: row;
-    border: 1px solid red;
     border-radius: 8px;
     padding: 5px;
     width: 80%;
@@ -103,27 +111,40 @@ a {
 
 #horiseon-img {
     width: 40%;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 #horiseon-title {
     justify-content: start;
     margin-left: 50px;
+    font-family: 'Karla', sans-serif; 
+    font-weight: bold;
 }
 #fanpage-container {
     display: flex;
-    border: 2px solid indigo
+}
+
+#fanpage-work-title {
+    justify-content: start;
+    margin: 10px;
+    padding: 5px;
+    padding-right: 52px;
+    width: 60px;
+    font-weight: bold;
+    border-right: 2px solid black;
+    font-family: 'Karla', sans-serif; 
 }
 
 #fanpage-title {
     justify-content: start;
-    margin-left: 125px;
+    margin-left: 50px;
+    font-family: 'Karla', sans-serif; 
+    font-weight: bold;
 }
 
 #fanpage-image {
     justify-content: start;
-    margin-left: 108px;
-    border: 2px solid cyan
+    margin-left: 80px;
 }
 
 #fanpage-img {
@@ -141,11 +162,15 @@ a {
 }
 
 #contact-methods {
-    border: 2px solid blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
     list-style: none;
     margin-left: 300px;
+    color:black;
+}
+
+#linked-in-link {
+    color: black;
 }

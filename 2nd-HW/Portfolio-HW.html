@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap" rel="stylesheet">
         <title>Portfolio</title>
     </head>
 
@@ -16,23 +19,22 @@
             </div>
             <ul id="nav-links">
                 <a href='#about-me-container'><li class='nav-link'>About Me</li></a>
-                <li class='nav-link'><a href='#'>Work</li></a>
-                <li class='nav-link'><a href='#'>Contact</li></a>
-                <li class='nav-link'><a href='#contact-me-container'>Resume</a></li>
+                <a href='#main-work-container'><li class='nav-link'>Work</li></a>
+                <a href='#contact-me-container'><li class='nav-link'>Contact</li></a>
             </ul>
         </header>
 
 
     <!--Main section with About me, Work, etc-->
-            <div id="about-me-container">
-                <div id="about-me-title">
-                    <p>About Me</p>
-                </div>
-
-                <div id="about-me-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum consectetur enim. Proin elementum nisi eu cursus faucibus. Mauris sit amet augue velit. Proin euismod dolor ut velit scelerisque luctus.<br> Duis dignissim blandit metus at consectetur. Nam felis quam, dignissim et augue at, vehicula sodales orci. In a orci vestibulum velit molestie ultrices. Aliquam luctus massa placerat turpis malesuada, at venenatis neque vulputate. Sed molestie sit amet odio ut efficitur. Pellentesque imperdiet quis justo id vestibulum. Ut ultricies venenatis pharetra. Nam venenatis dictum tellus, ut aliquet justo volutpat at. Aenean vestibulum tincidunt dui<br> ut malesuada. Nunc sit amet aliquet dui.</p>
-                </div>
+        <div id="about-me-container">
+            <div id="about-me-title">
+                <p>About Me</p>
             </div>
+
+            <div id="about-me-text">
+                <p> I am currently a student at The Ohio State University Coding bootcamp. I am building a foundation in full-stack web development and refining skills using HTML, CSS, and Javascript. I obtained my bachelor's degree from OSU, as well as a master's degree from Le Moyne College and currently work in healthcare as an occupational therapist. I believe many of the skills I have learned in this field will carryover to a career in web development including team collaboration, task analysis, and practical decision-making. I eager to build my skills further each day and learn as much as possible to become an outstanding programmer.</p>
+            </div>
+        </div>
 
     <!--Section about work and accomplishments-->
         <div id="main-work-container">
@@ -52,9 +54,13 @@
            
         <div id=fanpage-container>
 
-        <div id="fanpage-title">
-            <p>Fanpage</p>
-        </div>
+            <div id="fanpage-work-title">
+                <h3>    </h3>
+            </div>
+
+            <div id="fanpage-title">
+                <p>Fanpage</p>
+            </div>
 
             <div id="fanpage-image">
                 <img id= "fanpage-img" src="fanpage-screenshot.png" alt="Beyonce Fanpage">
@@ -70,12 +76,10 @@
             <ul id="contact-methods">
                 <li>(757)-708-1553</li>
                 <li>TRES1396@GMAIL.COM</li>
-                <li>LinkedIn</li>
+                <a class="linked-in-link" href="https://www.linkedin.com/in/tre-scott/"><li>LinkedIn</li></a>
                 <li>GitHub</li>
             </ul>
         
         </div>
-            
-        </section>
     </body>
 </html>
