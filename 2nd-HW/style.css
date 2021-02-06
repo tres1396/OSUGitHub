@@ -87,7 +87,7 @@ a {
     margin-top: 20px;
 }
 
-#main-work-title{
+#main-work-title {
     justify-content: start;
     border: 2px solid blue;
 }
@@ -97,19 +97,29 @@ a {
     border: 1px solid red;
     border-radius: 8px;
     padding: 5px;
-    width: 100%;
+    width: 80%;
     justify-content: center;
 }
 
-#horiseon-img{
+#horiseon-img {
     width: 40%;
     margin-left: 50px;
 }
 
+#horiseon-title {
+    justify-content: start;
+    margin-left: 50px;
+}
 #fanpage-container {
     display: flex;
     border: 2px solid indigo
 }
+
+#fanpage-title {
+    justify-content: start;
+    margin-left: 125px;
+}
+
 #fanpage-image {
     justify-content: start;
     margin-left: 108px;
