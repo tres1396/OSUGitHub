@@ -169,3 +169,8 @@ a {
     margin-left: 300px;
     color:black;
 }
+
+@media screen and (max-width: 768px) {
+    body{
+      flex-direction: column;
+    }
