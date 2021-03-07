@@ -49,10 +49,26 @@ function getApi(city) {
         })
 
         .then(function (json) {
-            // console.log(json)
+            console.log(json)
             var list = json.list
+            var abc = json.city.name
             populateCards(list)
+            populateCityInfo(json)
         })
+}
+
+function populateCityInfo(cityName) {
+    // console.log(cityName)
+    var cityTitle = cityName.city.name
+    var temperature = cityName.list[0].main.temp
+    var windSpeed = cityName.list[0].wind.speed
+    console.log(temperature)
+    var cityContainer = document.getElementById("city-info-container")
+    cityContainer.innerHTML = [cityTitle,"Temp " + temperature, "Windspeed " +windSpeed]
+
+   
+
+
 }
 
 function populateCards(cardData) {
@@ -77,21 +93,14 @@ function populateCards(cardData) {
 }
 
 function generateCard(weatherObj) {
-    console.log(weatherObj)
+    // console.log(weatherObj)
     // console.log(weatherObj.main.temp,weatherObj.main.humidity)
     var k = weatherObj.main.temp
     var humidity = weatherObj.main.humidity
     // var weather = weatherObj.weather[0].main
     var iconHtml = weatherObj.weather[0].main.icon
     var dateCard = weatherObj.dt_txt
-    
-// function populateCityInfo(weatherObj) {
-//     var nameOfCity = json.city.name
-//     console.log(nameOfCity)
-// }
-    
-
-
+ 
 
     var card = ` <div class="card" style="width: 18rem;">
     <div class="card-body">
@@ -105,5 +114,6 @@ function generateCard(weatherObj) {
 }
 
 function kToF(k) {
-    return    (k - 273) * 9 / 5 + 32
+    return (k - 273) * 9 / 5 + 32
 }
+
