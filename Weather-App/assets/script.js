@@ -31,6 +31,10 @@ $(document).ready(function () {
         printSearchHistory(cityInput);
         //reset form
         cityInputEl.val("")
+
+        function populateStorage() {
+            localStorage.setItem(cityInput)
+        }
     }
     $("#button-addon2").on("click", handleFormSubmit);
 })
