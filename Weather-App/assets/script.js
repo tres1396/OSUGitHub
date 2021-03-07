@@ -27,7 +27,7 @@ $(document).ready(function () {
             alert("Please enter a city!");
             return
         }
-
+        getApi(cityInput)
         printSearchHistory(cityInput);
         //reset form
         cityInputEl.val("")
@@ -37,38 +37,36 @@ $(document).ready(function () {
 
 //fetch API data
 function getApi(city) {
-    var apiKey = "c15e69f24e888598013d71da9fec0bb8"
-    // var dummyUrl = "http://api.openweathermap.org/data/2.5/forecast?q=atlanta&appid=c15e69f24e888598013d71da9fec0bb8"
+    var apiKey = "38128371177763caa51ff2b9c7054b07"
+    // var dummyUrl = "http://api.openweathermap.org/data/2.5/forecast?q=atlanta&appid=38128371177763caa51ff2b9c7054b07"
+    // console.log(dummyUrl)
     // var requestUrl = dummyUrl
-    var requestUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=c15e69f24e888598013d71da9fec0bb8`
+    var requestUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=38128371177763caa51ff2b9c7054b07`
+    // console.log(requestUrl)
     fetch(requestUrl)
         .then(function (response) {
             return response.json();
         })
 
         .then(function (json) {
-            console.log(json)
+            // console.log(json)
             var list = json.list
             populateCards(list)
         })
-
-
-
 }
 
-getApi()
 function populateCards(cardData) {
-    console.log(cardData)
+    // console.log(cardData)
     var fiveDayWeather = []
     for (var x = 0; x < cardData.length; x++) {
         var item = cardData[x]
         var dateString = item.dt_txt
-        console.log(item.weather[0].main)
+        // console.log(item.weather[0].main)
         if (dateString.includes("12:00")) {
             fiveDayWeather.push(item)
         }
     }
-    console.log(fiveDayWeather)
+    // console.log(fiveDayWeather)
     var cardsContainer = document.getElementById("cards-container")
     cardsContainer.innerHTML = ""
     for (var x = 0; x < fiveDayWeather.length; x++) {
@@ -80,24 +78,25 @@ function populateCards(cardData) {
 
 function generateCard(weatherObj) {
     console.log(weatherObj)
-    console.log(weatherObj.main.temp,weatherObj.main.humidity)
+    // console.log(weatherObj.main.temp,weatherObj.main.humidity)
     var k = weatherObj.main.temp
     var humidity = weatherObj.main.humidity
-    var weather = weatherObj.weather[0].main
-    var iconHtml 
-    if (weather == "Rain") {
-        // iconHtml = 
-    }
-
-
-
+    // var weather = weatherObj.weather[0].main
+    var iconHtml = weatherObj.weather[0].main.icon
+    var dateCard = weatherObj.dt_txt
+    
+// function populateCityInfo(weatherObj) {
+//     var nameOfCity = json.city.name
+//     console.log(nameOfCity)
+// }
+    
 
 
 
     var card = ` <div class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="card-title">Banana</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <h5 class="card-title">${dateCard}</h5>
+      <h6 class="card-subtitle mb-2 text-muted"> ${iconHtml}</h6>
       <p class="card-text">Temp: ${kToF(k)}</p>
       <p class="card-text">Humidity: ${humidity}</p>
     </div>
