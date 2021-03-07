@@ -13,6 +13,12 @@ textarea {
   padding: 10px;
 }
 
+div i {
+  font-size: 25px; /*???*/
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 20px;
+}
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -26,20 +32,25 @@ textarea {
 }
 
 .time-block{
-  text-align: center;
-  border-radius: 15px;
+  text-align: left;
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border: 1px solid black; /*Change back to white, and back to border-top only*/
+  border-top: 1px solid white; /*Change back to white, and back to border-top only*/
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  border-right: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .past {
@@ -48,17 +59,17 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ff6961 !important;
   color: white;
 }
 
-.future {
+.future, .time-block {
   background-color: #77dd77;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
@@ -69,19 +80,3 @@ textarea {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
-
-#test1 {
-  border: 1px solid black;
-  text-align: center;
-}
-
-#test2 {
-  border: 1px solid black;
-  text-align: center;
-}
-
-#test3 {
-  border: 1px solid black;
-  text-align: center; /*How do I resize this?*/
-}
-

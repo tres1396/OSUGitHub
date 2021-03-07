@@ -7,7 +7,7 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+     />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -17,13 +17,9 @@
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
-    />
-    <!--jQuery UI link tag-->
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <link rel="stylesheet" href="style.css"/>
+    />  
+    <!--Local CSS File-->
+    <link rel="stylesheet" href="./Assets/style.css"/>
     <!--Moment.js-->
     <script
       type="text/javascript"
@@ -41,16 +37,129 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <!--9am-->
       <div class="container">
         <div class="row">
-          <div class="col hour" id="test1">
+          <div class="col hour">
             9AM
           </div>
-          <div class="col-9 time-block" id="test2">
-            Event Here
+          <div class="col-9 time-block" id="timeRow9" onclick="myFunction()">
+           <input type="text" id="myInput" placeholder="Enter event here">
           </div>
-          <div class="col saveBtn" id="test3">
-            Save
+          <div class="col saveBtn">
+            <i class="far fa-save" onclick="myFunction1()"></i>
+          </div>
+        </div>
+      </div>
+      <!--10am-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            10AM
+          </div>
+          <div class="col-9 time-block" id="timeRow10" onclick="myFunction()">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+        </div>
+      </div>
+      <!--11am-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            11AM
+          </div>
+          <div class="col-9 time-block" id="timeRow11">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+        </div>
+      </div>
+      <!--12pm-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            12PM
+          </div>
+          <div class="col-9 time-block" id="timeRow12">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+        </div>
+      </div>
+      <!--1pm-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            1PM
+          </div>
+          <div class="col-9 time-block" id="timeRow13">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+        </div>
+      </div>
+      <!--2pm-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            2PM
+          </div>
+          <div class="col-9 time-block" id="timeRow14">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+        </div>
+      </div>
+      <!--3pm-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            3PM
+          </div>
+          <div class="col-9 time-block" id="timeRow15">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+        </div>
+      </div>
+      <!--4pm-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            4PM
+          </div>
+          <div class="col-9 time-block" id="timeRow16">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+        </div>
+      </div>
+      <!--5pm-->
+      <div class="container">
+        <div class="row">
+          <div class="col hour">
+            5PM
+          </div>
+          <div class="col-9 time-block" id="timeRow17">
+            <input type="text" id="myInput" placeholder="Enter event here">
+          </div>
+          <div class="col saveBtn">
+            <i class="far fa-save"></i>
           </div>
         </div>
       </div>
@@ -59,6 +168,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!--jQuery UI script tag-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="script.js"></script>
+    <script src="./Assets/script.js"></script>
   </body>
 </html>
